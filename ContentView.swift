@@ -10,9 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            Color(red: 241/255, green: 208/255, blue: 189/255).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            
             VStack {
+                    Image("Goals icon")
+                        .resizable()
+                    .frame(width: 100, height: 100)
                 ExtractedView(titleText: "Take part on a new adventure", description: "Jump into a challenge with your link and crush your goals with friends by your side!", buttonText: "Join a challenge")
                 
                 ExtractedView(titleText: "Get proactive", description: "Take the initiative to be a leader, and create a challenge of your own!", buttonText: "Create a challenge")
@@ -45,10 +46,10 @@ struct ExtractedView: View {
                 Button(buttonText) {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                 }.font(.custom("BebasNeue-Regular", size: 45))
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding()
                     .frame(width: 390, height: 70)  // Set a height to the button for a better appearance
-                    .background(Color.orange)
+                    .background(Color(red: 1.0, green: 0.25, blue: 0.09))
                     .cornerRadius(25)
             }.padding(.top, 20)
             

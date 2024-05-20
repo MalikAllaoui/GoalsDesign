@@ -44,7 +44,7 @@ struct ChallengeDescription: View {
         } .padding(.leading, 20)
                 .padding(.top, 20)
         Spacer()
-    }.background(Color(red: 241/255, green: 208/255, blue: 189/255))
+    }
         VStack{
             Text("Let's do this !")
                 .font(.custom("BebasNeue-Regular", size: 30))
@@ -53,7 +53,7 @@ struct ChallengeDescription: View {
             }.font(.custom("BebasNeue-Regular", size: 45))
                 .foregroundColor(.black)
                 .padding()
-                .frame(width: 390, height: 70)  // Set a height to the button for a better appearance
+                .frame(width: 390, height: 70)// Set a height to the button for a better appearance
                 .background(Color.orange)
                 .cornerRadius(10)
         }.padding(.top, 13)
